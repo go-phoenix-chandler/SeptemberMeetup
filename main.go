@@ -33,16 +33,15 @@ type response struct {
 }
 
 func checkAccept(r *http.Request) bool {
-	if strings.TrimSpace(r.Header.Get("Accept")) != "application/json\n" {
-		return false
+	if strings.TrimSpace(r.Header.Get("Accept")) == "application/json" {
+		return true
 	}
-	return true
+	return false
 }
 
-//TODO: create file server
 func indexHandler(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	res := new(response)
-	if checkAccept(r) {
+	if !checkAccept(r) {
 		res.Error = "must use Accept: application/json"
 	} else {
 		res.Data = "Hello World"
@@ -75,7 +74,7 @@ func (s *settings) urlHandler(w http.ResponseWriter, r *http.Request, ps httprou
 	res := new(response)
 	log.Logger(log.Info, pkg, "Received connection from "+r.RemoteAddr)
 	log.Logger(log.Info, pkg, "Requested URL: "+r.URL.String())
-	if checkAccept(r) {
+	if !checkAccept(r) {
 		res.Error = "must use Accept: application/json"
 		log.Logger(log.Err, pkg, "Accept: application/json not set. No data sent")
 	} else {
