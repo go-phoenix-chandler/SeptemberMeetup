@@ -24,7 +24,5 @@ http://<host>:<port>/api/v1/uri
 
 - Create MakeFile for pkgs
 - Test `go get`
-- Have the root parse and show this README
-- Comment code
 - Finish tests (figure out best way to test with httprouter)
 - Test EVERYTHING by actually running it
