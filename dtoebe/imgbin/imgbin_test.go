@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/dtoebe/gophx-img-api/settingsloader"
-	. "github.com/dtoebe/gophx-img-api/testerror"
+	"../settingsloader"
+	. "../testerror"
 )
 
 func TestNewImg(t *testing.T) {

@@ -1,8 +1,8 @@
 {
     "host": "localhost",
     "port": "35729",
-    "image-dir": "./images",
-    "font-path": "./assets/arial.ttf",
+    "image-dir": "/absolutpath/to/images",
+    "font-path": "/absolute/path/to/arial.ttf",
     "root-url": "/api/v1",
     "urls": [
         {

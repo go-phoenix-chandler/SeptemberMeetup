@@ -35,14 +35,14 @@ func createImgPath(text, imgPath string) (path, name string, err error) {
 func CreateImgBin(count int, fontPath, imgPath string) (path string, err error) {
 	log.LogInit()
 	text := strconv.Itoa(count)
-	imgPath, imgName, err := createImgPath(text, imgPath)
+	imgP, imgName, err := createImgPath(text, imgPath)
 	if err != nil {
 		log.Logger(log.Err, pkg, "Error setting image path:"+err.Error())
 		return "", err
 	}
-	imgFile, err := os.Create(imgPath)
+	imgFile, err := os.Create(imgP)
 	if err != nil {
-		log.Logger(log.Err, pkg, "Error creating image file")
+		log.Logger(log.Err, pkg, "Error creating image file: "+err.Error())
 		return "", err
 	}
 	defer imgFile.Close()

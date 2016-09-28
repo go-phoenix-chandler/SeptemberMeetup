@@ -10,7 +10,7 @@ I basically built an API that can easily be configured for more endpoints than w
 
 I was going to go simple with this but ended up starting a proof of consept for an easily extendable api platform.  While chances are I will not continue to update this repo I will start working on a hot loading API system in the near future. 
 
-For the purposes of this challenge, don't make too many changes to the server-config.json.
+For the purposes of this challenge, don't make too many changes to the server-config.json, accept the absolute path to the font-path, and image-dir.
 
 ### To run
 

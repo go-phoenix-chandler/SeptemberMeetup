@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/dtoebe/gophx-img-api/settingsloader"
-	. "github.com/dtoebe/gophx-img-api/testerror"
+	"../settingsloader"
+	. "../testerror"
 )
 
 var testRGBA = image.NewRGBA(image.Rect(0, 0, 10, 10))

@@ -160,7 +160,7 @@ func main() {
 	}
 	log.Logger(log.Info, pkg, "Checking for image directory")
 	//Check and/or create the Image Path
-	checkFilePath(s.Data.ImgDir)
+	createImageDir(s.Data.ImgDir)
 	log.Logger(log.Info, pkg, "Starting server on "+s.Data.Host+":"+s.Data.Port)
 	router := httprouter.New()
 	//Serve Image Directory as static files
