@@ -150,6 +150,9 @@ func main() {
 	log.LogInit()
 	log.Logger(log.Info, pkg, "Loading Settings...")
 	s := new(settings)
+	if len(os.Args) < 2 {
+		log.Logger(log.Ftl, pkg, "Please set absolute path to server-settings.json file")
+	}
 	s.Data = settingsloader.NewSettings(os.Args[1])
 	//Check if Font File exists if not fatal out
 	if !checkFilePath(s.Data.FontPath) {

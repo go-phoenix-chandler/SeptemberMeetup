@@ -1,8 +1,8 @@
 {
     "host": "localhost",
     "port": "35729",
-    "image-dir": "/home/dtoebe/Downloads/images",
-    "font-path": "/home/dtoebe/Downloads/assets/arial.ttf",
+    "image-dir": "./images",
+    "font-path": "./assets/arial.ttf",
     "root-url": "/api/v1",
     "urls": [
         {
