@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dtoebe/gophx-img-api/imgbin"
-	"github.com/dtoebe/gophx-img-api/imguri"
-	log "github.com/dtoebe/gophx-img-api/loghandler"
-	"github.com/dtoebe/gophx-img-api/settingsloader"
+	"./imgbin"
+	"./imguri"
+	log "./loghandler"
+	"./settingsloader"
 	"github.com/julienschmidt/httprouter"
 )
 

@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/dtoebe/gophx-img-api/fontrender"
-	log "github.com/dtoebe/gophx-img-api/loghandler"
+	"../fontrender"
+	log "../loghandler"
 )
 
 type empty struct{}

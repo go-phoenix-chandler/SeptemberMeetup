@@ -15,7 +15,7 @@ import (
 	"io/ioutil"
 	"reflect"
 
-	log "github.com/dtoebe/gophx-img-api/loghandler"
+	log "../loghandler"
 	"github.com/golang/freetype"
 	"github.com/golang/freetype/truetype"
 	"golang.org/x/image/font"
