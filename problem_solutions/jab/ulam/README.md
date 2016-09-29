@@ -12,5 +12,5 @@ Available flags:
 * -graph -> graph the prime numbers, rather than a **#**
 
 
-Note: I am not a mathmatician, so I was able to translate the ulam spiral as a pattern, rather than a mathematical equation.
+Note: I am not a mathematician, so I was able to translate the ulam spiral as a pattern, rather than a mathematical equation.
 Note: Because of the limitations of printing to the console, any number greater than 4 characers in length will break the graphical representation of the spiral most likely.
