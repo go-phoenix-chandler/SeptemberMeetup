@@ -1,0 +1,4 @@
+# Ulam Spiral
+
+###
+
