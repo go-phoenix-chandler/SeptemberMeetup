@@ -8,10 +8,11 @@ import (
 type class int
 
 const (
-	mammal  class = 0
-	insect        = 1
-	bird          = 2
-	reptile       = 3
+	mammal     class = 0
+	insect           = 1
+	bird             = 2
+	reptile          = 3
+	amphibians       = 4
 )
 
 type walks interface {
